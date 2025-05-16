@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fulty calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>My Calculator</h1>
+        <div class="box">
+          <input type="text" id="display" class="display" value="0" readonly />
+
+          <div class="keycontainer">
+            <div class="keys">
+              <button onclick="appendValue('%')" class="top-control">%</button>
+              <button onclick="clearDisplay()" class="top-control">C</button>
+              <button onclick="deleteBtn()" class="top-control">←</button>
+              <button onclick="appendValue('/')" class="top-control font-siz">
+                &divide;
+              </button>
+              <button onclick="appendValue('7')" class="number">7</button>
+              <button onclick="appendValue('8')" class="number">8</button>
+              <button onclick="appendValue('9')" class="number">9</button>
+
+              <button onclick="appendValue('*')" class="top-control font-siz">
+                &times;
+              </button>
+              <button onclick="appendValue('4')" class="number">4</button>
+              <button onclick="appendValue('5')" class="number">5</button>
+              <button onclick="appendValue('6')" class="number">6</button>
+              <button onclick="appendValue('-')" class="top-control font-siz">
+                &minus;
+              </button>
+              <button onclick="appendValue('1')" class="number">1</button>
+              <button onclick="appendValue('2')" class="number">2</button>
+              <button onclick="appendValue('3')" class="number">3</button>
+              <button
+                onclick="appendValue('+')"
+                class="displayNon combo"
+              ></button>
+              <button onclick="appendValue('.')" class="number">.</button>
+              <button onclick="appendValue('0')" class="number">0</button>
+              <button onclick="calculate()" class="number">&equals;</button>
+
+              <button onclick="appendValue('+')" class="plus combo font-siz">
+                &plus;
+              </button>
+            </div>
+          </div>
+        </div>
+        <p class="copyRight-text">
+          &copy; 2025 Bikash Rai. All rights reserved.
+        </p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

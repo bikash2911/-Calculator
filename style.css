@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  overflow-x: hidden;
+}
+
+section {
+  background-color: rebeccapurple;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: yellow;
+  font-size: 3.6rem;
+}
+
+.container {
+  width: 50%;
+  min-width: 300px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.box {
+  background-color: gray;
+  width: 245px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  gap: 3rem;
+}
+
+.display {
+  background-color: black;
+  color: white;
+  width: 90%;
+  height: auto;
+  padding: 0.8rem 0.5rem;
+  text-align: right;
+  font-size: 3rem;
+  border-radius: 0.5rem;
+}
+
+.keycontainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.1rem 0.1rem 1rem 0.1rem;
+  gap: 1rem;
+}
+
+.keys {
+  background-color: rgb(124, 121, 121);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+}
+button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+button:hover {
+  background-color: #555;
+  color: white;
+}
+.top-control {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+}
+
+.number {
+  height: 4rem;
+  width: 4rem;
+  background-color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.displayNon {
+  visibility: hidden;
+  position: relative;
+}
+.plus {
+  width: 4rem;
+  height: 9rem;
+  position: absolute;
+}
+.combo {
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1;
+}
+
+.font-siz {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0;
+}
+.copyRight-text {
+  padding: 5rem 1rem 0 1rem;
+  font-size: 1.6rem;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 1rem;
+  }
+  .box {
+    margin-top: 2rem;
+    gap: 2rem;
+    padding-top: 3.5rem;
+  }
+}
