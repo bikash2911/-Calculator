@@ -51,7 +51,7 @@ function calculate() {
   // 🧹 Reset repeat count if other input (not 1-9 digit)
   repeatCountForDigits = 0;
 
-  if (input === "1234") {
+  if (input === ".") {
     display.value = "Bikash Rai";
     return;
   }
