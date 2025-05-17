@@ -21,7 +21,7 @@ function deleteBtn() {
   }
 }
 
-const messages = ["Good Boy", "Bad Boy", "Pagal Ho?", "Lucky!"];
+const messages = ["🔥 Lucky", "🍀 Blessed", "💔 Sad", "❤️ Love", "💰 Rich", "🫣 Risk", "😬 Unlucky"];
 let lastMessage = "";
 let repeatCountForDigits = 0;
 
@@ -32,7 +32,7 @@ function calculate() {
   if (/^[1-9]$/.test(input)) {
     repeatCountForDigits++;
 
-    if (repeatCountForDigits >= 4) {
+    if (repeatCountForDigits >= 2) {
       display.value = "Pagal Ho?";
       return;
     }
@@ -53,11 +53,6 @@ function calculate() {
 
   if (input === "1234") {
     display.value = "Bikash Rai";
-    return;
-  }
-
-  if (input === "123") {
-    display.value = "Khalifa Bhusudi";
     return;
   }
 
