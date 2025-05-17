@@ -202,11 +202,14 @@ a.simple-link:hover {
   background-color: #45a049;
 }
 
-@media  screen and (max-width: 600px) {
-  .container-about{
+@media screen and (max-width: 600px) {
+  .container h1 {
+    display: none;
+  }
+  .container-about {
     flex-direction: column;
   }
-  .smart h1{
+  .smart h1 {
     display: none;
   }
 }
