@@ -24,6 +24,7 @@ h1 {
   color: black;
   font-size: 3.6rem;
   margin: 1rem 0;
+  text-align: center;
 }
 
 .container {
@@ -150,8 +151,8 @@ p {
 
 .smart h1 {
   padding: 3rem 0;
-  /* text-decoration: underline; */
   color: green;
+  text-align: center;
 }
 hr {
   width: 80%;
@@ -199,4 +200,13 @@ a.simple-link:hover {
 
 .home-button:hover {
   background-color: #45a049;
+}
+
+@media  screen and (max-width: 600px) {
+  .container-about{
+    flex-direction: column;
+  }
+  .smart h1{
+    display: none;
+  }
 }
