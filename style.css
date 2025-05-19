@@ -146,6 +146,8 @@ p {
 /* about  section */
 
 .smart {
+  width: 100%;
+  height: auto;
   flex-direction: column;
 }
 
@@ -159,7 +161,7 @@ hr {
   margin: 2rem 0;
 }
 .container-about {
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,13 +205,11 @@ a.simple-link:hover {
 }
 
 @media screen and (max-width: 600px) {
+  .smart {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
   .container h1 {
-    display: none;
-  }
-  .container-about {
-    flex-direction: column;
-  }
-  .smart h1 {
     display: none;
   }
 }
