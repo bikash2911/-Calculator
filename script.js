@@ -33,7 +33,7 @@ function calculate() {
     repeatCountForDigits++;
 
     if (repeatCountForDigits >= 2) {
-      display.value = "Pagal Ho?";
+      display.value = "Error";
       return;
     }
 
